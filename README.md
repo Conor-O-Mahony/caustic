@@ -1,1 +1,3 @@
-# caustic
+-target="_blank" added to links so that they'll open in a new tab
+-background transition images preloaded to stop flickering https://stackoverflow.com/questions/49216762/why-is-the-background-flashing-flickering-when-transitioning-to-another-image-c
+-table element overflow hidden: https://stackoverflow.com/questions/9789723/css-text-overflow-in-a-table-cell#comment12463432_9789723

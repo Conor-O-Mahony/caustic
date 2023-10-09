@@ -1,0 +1,412 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    margin: 0 auto;
+    animation: color 20s infinite linear;
+    backdrop-filter: blur(2px) grayscale(100%);
+    -webkit-backdrop-filter: blur(2px) grayscale(100%) ;
+    z-index: -1;
+}
+
+.wholewrapper {
+    width: 80%;
+    margin:0 auto;
+    overflow: hidden;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color:dimgrey;
+}
+
+a:hover {
+    color:darkblue;
+}
+
+header {
+    height:100px;  /*CHANGE THIS FOR MOBILE SCREENS WITH NEW STYLESHEET*/
+    background-color: #fff;
+}
+
+header h1 {
+    float: left;
+    padding: 5px 60px;
+    color:dimgrey;
+}
+
+header nav {
+    float: right;
+    padding-right: 20px;
+}
+
+header nav ul li {
+    margin-top: 20px;
+    display: inline-block;
+    padding-right: 15px;
+    height:40px;
+}
+
+header nav ul li:hover {
+    background-image: url('images/navbomb.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: center;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: bold;
+    
+}
+
+#indeximg {
+    background: url('images/index/bg4.png') no-repeat center;
+    background-position: -550px -300px ;
+    height: 300px;
+    padding-top:5px;
+}
+
+#indeximg h2 {
+    text-align: center;
+	margin: 0 auto 1px auto;
+    font-size: 30pt;
+    width:400px;
+    border-bottom: 3px solid crimson;
+    padding: 80px 0 5px 0;
+    color: white;
+    text-shadow: 3px 3px 1px crimson;
+    
+}
+
+#indeximg h3 {
+    text-align: center;
+    padding:0px;
+    color: white;
+    text-shadow: 3px 3px 1px crimson;
+
+}
+
+.centerp {
+    text-align: center;
+    padding: 10px;
+}
+
+.genrewrap {
+    background-color:#fff;
+}
+
+#genreboxes {
+    margin: 0 auto;
+    
+}
+
+
+#genreboxes ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+#genreboxes ul li {
+    padding-top:100px;
+    margin-right: 15px;
+    height:300px;
+    width: 250px;
+    border-radius: 20px;
+    
+}
+/*width: 300px;
+	padding-top: 140px;
+	float: left;
+	margin-right: 10px;
+	text-align: center;*/
+
+#genreboxes ul li.genre1 { /*Credit: https://css-pattern.com/ */
+        --s: 82px; /* control the size */
+        --c1: #b2b2b2;
+        --c2: #ffffff;
+        --c3: #d9d9d9;
+        
+        --_g: var(--c3) 0 120deg,#0000 0;
+        background:
+          conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+          conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+          conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+          conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+          linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                                var(--c1) 0 calc(500%/6),var(--c2) 0);
+        background-size: calc(1.732*var(--s)) var(--s);
+      
+}
+#genreboxes ul li.genre2 {
+	background-image: radial-gradient(crimson 0.5px, lightgrey 0.5px);
+    background-size: 15px 15px;
+}
+#genreboxes ul li.genre3 {
+    background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(191,191,191,1) 100%);}
+
+#genreboxes ul li a {
+    color: crimson;
+}
+
+#albumboxes {
+    position: relative;
+    padding: 8px; 
+}
+
+#blockbg { /*Credit: https://superdesigner.co/tools/css-backgrounds*/
+    background: linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%),linear-gradient(135deg, transparent 24%,crimson 25%, crimson 45%, transparent 45%), linear-gradient(45deg, transparent 24%,crimson 25%, crimson 45%, transparent 45%);
+    background-size: 3em 3em;
+    background-color: #ffffff;
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#inner {
+    border: 2px solid crimson; 
+    position: relative;
+}
+
+#albumboxes ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#albumboxes ul li {
+    width: 10vw;
+    height:10vw;
+    margin-right: 5px;
+    margin-left:5px;
+    border-radius: 5px;
+}
+
+#albumboxes ul li a {
+    color: #444;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#albumboxes ul li.album1 {
+	background: url('images/album1.png') no-repeat center;
+    background-size: 10vw 10vw;
+}
+#albumboxes ul li.album2 {
+	background: url('images/album2.png') no-repeat center;
+    background-size: 10vw 10vw;
+}
+#albumboxes ul li.album3 {
+	background: url('images/album3.png') no-repeat center;
+    background-size: 10vw 10vw;
+}
+#albumboxes ul li.album4 {
+	background: url('images/album4.png') no-repeat center;
+    background-size: 10vw 10vw;
+}
+#albumboxes ul li.album5 {
+	background: url('images/album5.png') no-repeat center;
+    background-size: 10vw 10vw;
+}
+
+footer {
+    margin-top: 40px;
+	background-color: #f8fafa;
+}
+
+.genrewrapper {
+    overflow:hidden;
+    background-color:#444;
+    margin:0 auto;
+}
+
+.ytvid {
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.ytvid iframe {
+    width: 40vw;
+    height: 30vw;
+    max-height: 500px;
+    max-width: 800px;
+    margin-left: 5vw;
+    margin-bottom: 40px;
+}
+
+.maingenre {
+    color:whitesmoke;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin:20px 20px 20px 20px;
+    
+}
+
+.genrewrapper details {
+    color:whitesmoke;
+    margin:0px 0px 0 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
+  }
+
+.genrewrapper summary {
+    display: block;
+    cursor: pointer;
+}
+
+.genrewrapper summary p:hover {
+    color:darkblue;
+}
+
+.genrewrapper summary p {
+    color:lightblue
+}
+
+
+.albumtable {
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    display: table;
+}
+
+.albumtable tr td {
+    overflow-wrap: break-word;
+}
+
+
+.albumtable table {
+    table-layout:fixed;
+    width:100%;
+}
+
+.albumtable tr:nth-child(odd) {
+    background-color: #444;
+    color: white;
+}
+
+.albumtable tr:nth-child(even) {
+    background-color: white;
+}
+
+.albumtable tr:first-child {
+    background-color: black;
+}
+
+.albumtable p {
+    margin: 5px;
+}
+
+.albumtable img {
+    width: 10vw;
+    width: 10vw;
+}
+
+.albumtable a {
+    color:crimson;
+}
+
+.albumtable a:hover {
+    color:goldenrod;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.gallery ul li {
+    /* width: 350px; */
+    width: 10vw;
+    height: 10vw;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+.gallery ul li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery ul li:hover .overlay {
+    transform: scale(1);
+}
+
+.testwrapper {
+    height: 100%;
+}
+
+.notablealbums {
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: center;
+    margin-top: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 15px;
+}
+
+.albumtable summary {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.albumtable summary p:hover {
+    color:goldenrod
+}
+
+.albumtable summary p {
+    color:crimson;
+}
+
+#genreboxes h4 {
+    border-bottom: 2px solid crimson;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.notablealbums h4 {
+    border-bottom: 2px solid crimson;
+}
+
