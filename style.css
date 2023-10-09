@@ -50,7 +50,8 @@ header nav ul li:hover {
     background-image: url('images/navbomb.png');
     background-repeat: no-repeat;
     background-size: 40px 40px;
-    background-position: center;
+    background-position: 10px -6px;
+    
 }
 .active {
     border-bottom: 2px solid crimson;
@@ -212,6 +213,7 @@ header nav ul li a {
 footer {
     margin-top: 40px;
 	background-color: #f8fafa;
+    border-radius: 10px;
 }
 
 .genrewrapper {
@@ -466,7 +468,7 @@ footer {
 }
 
 .reviewbox {
-    display: block;
+    display: inline;
     width: auto;
     margin-right: 20px;
     margin-bottom: 40px;
