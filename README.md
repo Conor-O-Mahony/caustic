@@ -1,9 +1,10 @@
-#Conor O Mahony - Web App Development Assignment 1
+# Conor O Mahony - Web App Development Assignment 1
+Personal website
 
 ## Caustic
 A site for about music for lovers of music. Here one will find music history, reviews and my personal taste.
 
-##General Accessibility
+## General Accessibility
 
 - On mobile and smaller screen devices (less than 650px), the navbar is floated below the logo, the album table fonts are decreased, the gallery images are rescaled and the album overlay text font is decreased. This is done to improve accessibility.
 

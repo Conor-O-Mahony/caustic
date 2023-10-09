@@ -258,14 +258,11 @@ footer {
 .genrewrapper summary {
     display: block;
     cursor: pointer;
+    color:lightblue;
 }
 
-.genrewrapper summary p:hover {
+.genrewrapper summary:hover {
     color:darkblue;
-}
-
-.genrewrapper summary p {
-    color:lightblue
 }
 
 .albumtable table {
@@ -305,7 +302,7 @@ footer {
     padding: 10px;
 }
 
-.albumtable p {
+.albumtable details {
     margin: 5px;
 }
 
@@ -318,6 +315,14 @@ footer {
 }
 
 .albumtable a:hover {
+    color:goldenrod;
+}
+
+.albumtable summary {
+    color:crimson;
+}
+
+.albumtable summary:hover {
     color:goldenrod;
 }
 
@@ -468,7 +473,7 @@ footer {
 }
 
 .reviewbox {
-    display: inline;
+    display: block;
     width: auto;
     margin-right: 20px;
     margin-bottom: 40px;
@@ -494,4 +499,5 @@ footer {
 
 .reviewbox p {
     max-width: 350px;
+    display: inline;
 }
